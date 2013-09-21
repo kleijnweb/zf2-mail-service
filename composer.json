@@ -25,7 +25,8 @@
     "autoload": {
         "psr-0": {
             "MailService": "src/"
-        }
+        },
+        "classmap" : ["Module.php"]
     },
     "bin": [
     ]
