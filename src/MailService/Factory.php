@@ -1,6 +1,6 @@
 <?php
 
-namespace MailService\Mail;
+namespace MailService;
 
 
 use MailService\Mail\Message\Config as MessageConfig;

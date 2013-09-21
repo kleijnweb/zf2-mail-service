@@ -17,9 +17,9 @@ return array(
 
     'service_manager' => array (
         'factories' => array (
-            'mail' => 'Application\Mail\Factory',
-            'mail_message_config' => 'Application\Mail\Message\ConfigFactory',
-            'mail_transport' => 'Application\Mail\Transport\Factory'
+            'mail' => 'MailService\Factory',
+            'mail_message_config' => 'MailService\Message\ConfigFactory',
+            'mail_transport' => 'MailService\Transport\Factory'
         )
     )
 );
