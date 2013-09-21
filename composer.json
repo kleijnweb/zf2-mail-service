@@ -1,0 +1,32 @@
+{
+    "name": "51systems/zf2-mail-service",
+    "description": "Service manager configurator for Zend\\Mail",
+    "type": "library",
+    "license": "LGPL-3.0",
+    "keywords": [
+        "Zend\\Mail",
+        "Mail"
+    ],
+    "homepage": "https://github.com/51systems/zf2-mail-service",
+    "authors": [
+        {
+            "name": "Dustin Thomson",
+            "email": "dthomson@51systems.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3",
+        "zendframework/zend-mail" : ">=2.2.0",
+        "zendframework/zend-view" : ">=2.2.0"
+
+    },
+
+    "autoload": {
+        "psr-0": {
+            "MailService": "src/"
+        }
+    },
+    "bin": [
+    ]
+}
