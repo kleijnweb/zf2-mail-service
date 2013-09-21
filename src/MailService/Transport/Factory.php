@@ -29,7 +29,14 @@ class Factory implements FactoryInterface
     {
         $config = $serviceLocator->get('Config');
 
-        if (isset($config['mail']) && isset($config['mail']['transport'])) {
+        if (isset($config['mail']['transport'])) {
+
+            //Check to see if we need to create the path
+            if (isset($config['mail']['transport']['options']['path']) && $config['mail']['transport']['name'] == 'file') {
+                if (!file_exists($config['mail']['transport']['options']['path'])) {
+                    mkdir($config['mail']['transport']['options']['path'], 0777, true);
+                }
+            }
 
             /** @var TransportInterface $transport */
             $transport = $this->transportPluginManager->get($config['mail']['transport']['name']);
