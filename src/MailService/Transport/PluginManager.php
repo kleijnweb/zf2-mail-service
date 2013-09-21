@@ -1,6 +1,6 @@
 <?php
 
-namespace MailService\Mail\Transport;
+namespace MailService\Transport;
 
 
 use Zend\Mail\Exception\RuntimeException;

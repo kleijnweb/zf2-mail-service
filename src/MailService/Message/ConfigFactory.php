@@ -1,6 +1,6 @@
 <?php
 
-namespace MailService\Mail\Message;
+namespace MailService\Message;
 
 
 use Zend\ServiceManager\FactoryInterface;
