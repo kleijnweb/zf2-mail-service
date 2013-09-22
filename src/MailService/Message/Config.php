@@ -7,9 +7,6 @@ use Traversable;
 use Zend\Stdlib\AbstractOptions;
 
 /**
- * Class Config
- * @package Application\Mail\Message
- *
  * Object used to configure email messages
  */
 class Config extends AbstractOptions
