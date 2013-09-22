@@ -4,7 +4,7 @@
     "type": "library",
     "license": "LGPL-3.0",
     "keywords": [
-        "Zend\\Mail",
+        "Zend",
         "Mail"
     ],
     "homepage": "https://github.com/51systems/zf2-mail-service",
