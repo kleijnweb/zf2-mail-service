@@ -3,7 +3,7 @@
 namespace MailService;
 
 
-use MailService\Mail\Message\Config as MessageConfig;
+use MailService\Message\Config as MessageConfig;
 use Zend\Mail\Message;
 use Zend\Mail\Transport\TransportInterface;
 use Zend\ServiceManager\FactoryInterface;
