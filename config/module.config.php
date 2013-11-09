@@ -10,7 +10,9 @@ return array(
         'transport' => array (
             'name' => 'file',
             'options' => array (
-                'path' => 'data/mail'
+                //We can't set this as a default otherwise it is present when other transports
+                //are configured
+                //'path' => 'data/mail'
             )
         )
     ),
