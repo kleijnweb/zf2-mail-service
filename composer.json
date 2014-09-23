@@ -1,6 +1,6 @@
 {
-    "name": "51systems/zf2-mail-service",
-    "description": "Service manager configurator for Zend\\Mail",
+    "name": "kleijnweb/zf2-mail-service",
+    "description": "A configurable service for sending HTML emails using ZF 2.3 (forked from 51systems/zf2-mail-service)",
     "type": "library",
     "license": "LGPL-3.0",
     "keywords": [
