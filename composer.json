@@ -12,13 +12,17 @@
         {
             "name": "Dustin Thomson",
             "email": "dthomson@51systems.com"
+        },
+        {
+            "name": "John Kleijn",
+            "email": "john@kleijnweb.nl"
         }
     ],
 
     "require": {
         "php": ">=5.3",
-        "zendframework/zend-mail" : ">=2.2.0",
-        "zendframework/zend-view" : ">=2.2.0"
+        "zendframework/zend-mail" : ">=2.3.0",
+        "zendframework/zend-view" : ">=2.3.0"
 
     },
 

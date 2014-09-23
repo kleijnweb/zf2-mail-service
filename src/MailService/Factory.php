@@ -9,7 +9,8 @@ use Zend\Mail\Transport\TransportInterface;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\View\Model\ViewModel;
-use Zend\View\Renderer\PhpRenderer;
+use Zend\Mime\Part as MimePart;
+use Zend\Mime\Message as MimeMessage;
 
 class Factory implements FactoryInterface
 {
@@ -54,9 +55,13 @@ class Factory implements FactoryInterface
         $viewRenderer = $this->serviceLocator->get('ViewRenderer');
         $result = $viewRenderer->render($viewModel);
 
+        $html = new MimePart($result);
+        $html->type = "text/html";
+        $mimeMessage = new MimeMessage;
+        $mimeMessage->addPart($html);
 
         $message = $this->getMessage();
-        $message->setBody($result);
+        $message->setBody($mimeMessage);
 
         return $message;
     }
